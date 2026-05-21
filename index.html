@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vadapaav - Authentic tasty Vada Pav from Vadodara. Experience the best street food with signature spices and chutneys.">
+    <title>Vadapaav | Tasty Vadaapaav from Vadodara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">🔥</span>
+            <span class="brand-text">VP</span>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+            <li><a href="#menu" class="nav-link" data-section="menu">Menu</a></li>
+            <li><a href="#chutney" class="nav-link" data-section="chutney">Chutney</a></li>
+            <li><a href="#location" class="nav-link" data-section="location">Location</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">AboutUs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero section" id="home" data-bg="warm">
+        <div class="hero-bg-pattern"></div>
+        <div class="spice-particle spice-1"></div>
+        <div class="spice-particle spice-2"></div>
+        <div class="spice-particle spice-3"></div>
+        <div class="spice-particle spice-4"></div>
+        <div class="spice-particle spice-5"></div>
+
+        <div class="hero-content">
+            <div class="hero-vadapaav-wrapper" data-animate="float-right">
+                <img src="vadaapaav.png" alt="Delicious Vada Pav" class="hero-vadapaav-img" id="hero-vadapaav">
+                <div class="vadapaav-glow"></div>
+            </div>
+            <div class="hero-text-block">
+                <h1 class="hero-title" data-animate="reveal">Vadapaav</h1>
+                <p class="hero-tagline" data-animate="fade-up">Tasty Vadaapaav | Vadodara</p>
+                <a href="#menu" class="hero-cta" data-animate="fade-up">
+                    Explore Menu
+                    <span class="cta-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-masala-wrapper">
+            <img src="garammasaalaa.png" alt="Garam Masala Spices" class="hero-masala-img" id="hero-masala">
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ============ MENU SECTION ============ -->
+    <section class="menu-section section" id="menu" data-bg="teal">
+        <div class="menu-hero">
+            <div class="menu-hero-bg"></div>
+            <div class="menu-hero-overlay"></div>
+            <div class="menu-hero-content">
+                <span class="menu-label-tag">Explore</span>
+                <h1 class="menu-hero-title">Our Menu</h1>
+                <p class="menu-hero-sub">Handcrafted with love, spiced to perfection</p>
+            </div>
+            <div class="menu-hero-img-float">
+                <img src="vadaapaav.png" alt="Vadapaav" class="menu-float-vadapaav">
+            </div>
+        </div>
+
+        <div class="menu-body">
+        <div class="menu-container">
+            <div class="category-tabs" id="categoryTabs">
+                <button class="cat-tab active" data-category="all">
+                    <span class="tab-icon">🍽️</span> All
+                </button>
+                <button class="cat-tab" data-category="signature">
+                    <span class="tab-icon">⭐</span> Signature
+                </button>
+                <button class="cat-tab" data-category="special">
+                    <span class="tab-icon">🌶️</span> Special
+                </button>
+                <button class="cat-tab" data-category="sides">
+                    <span class="tab-icon">🥘</span> Sides
+                </button>
+                <button class="cat-tab" data-category="beverages">
+                    <span class="tab-icon">☕</span> Beverages
+                </button>
+                <button class="cat-tab" data-category="combos">
+                    <span class="tab-icon">🎉</span> Combos
+                </button>
+            </div>
+
+            <!-- ============ MENU GRID ============ -->
+            <div class="menu-grid" id="menuGrid">
+
+                <!-- SIGNATURE ITEMS -->
+                <div class="menu-item" data-category="signature" data-animate="stagger" data-delay="0">
+                    <div class="item-badge bestseller">★ Bestseller</div>
+                    <div class="item-visual">
+                        <div class="item-emoji">🥔</div>
+                        <div class="item-ring"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Classic Vadapaav</h3>
+                        <p class="item-desc">The OG! Crispy aloo vada in fresh pav with our signature dry garlic chutney & green chutney</p>
+                        <div class="item-meta">
+                            <div class="spice-dots">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span>
+                            </div>
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹30</span>
+                        <button class="add-btn" aria-label="Add Classic Vadapaav">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <div class="menu-item" data-category="signature" data-animate="stagger" data-delay="1">
+                    <div class="item-badge popular">♥ Popular</div>
+                    <div class="item-visual">
+                        <div class="item-emoji">🧀</div>
+                        <div class="item-ring"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Cheese Vadapaav</h3>
+                        <p class="item-desc">Our classic topped with melting cheese slice — comfort meets tradition</p>
+                        <div class="item-meta">
+                            <div class="spice-dots">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                            </div>
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹50</span>
+                        <button class="add-btn" aria-label="Add Cheese Vadapaav">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <div class="menu-item" data-category="signature" data-animate="stagger" data-delay="2">
+                    <div class="item-visual">
+                        <div class="item-emoji">🧈</div>
+                        <div class="item-ring"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Butter Vadapaav</h3>
+                        <p class="item-desc">Buttery toasted pav with our crispy vada — rich, indulgent & irresistible</p>
+                        <div class="item-meta">
+                            <div class="spice-dots">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span>
+                            </div>
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹45</span>
+                        <button class="add-btn" aria-label="Add Butter Vadapaav">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <!-- SPECIAL ITEMS -->
+                <div class="menu-item" data-category="special" data-animate="stagger" data-delay="0">
+                    <div class="item-badge hot">🔥 Hot</div>
+                    <div class="item-visual">
+                        <div class="item-emoji">🌶️</div>
+                        <div class="item-ring ring-red"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Schezwan Vadapaav</h3>
+                        <p class="item-desc">Indo-chinese fusion! Loaded with fiery schezwan sauce & crunchy onions</p>
+                        <div class="item-meta">
+                            <div class="spice-dots">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                            </div>
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹55</span>
+                        <button class="add-btn" aria-label="Add Schezwan Vadapaav">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <div class="menu-item" data-category="special" data-animate="stagger" data-delay="1">
+                    <div class="item-visual">
+                        <div class="item-emoji">💪</div>
+                        <div class="item-ring ring-gold"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Double Vadapaav</h3>
+                        <p class="item-desc">For the hungry souls — two crispy vadas in one jumbo pav with extra chutney</p>
+                        <div class="item-meta">
+                            <div class="spice-dots">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+                            </div>
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹60</span>
+                        <button class="add-btn" aria-label="Add Double Vadapaav">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <div class="menu-item" data-category="special" data-animate="stagger" data-delay="2">
+                    <div class="item-visual">
+                        <div class="item-emoji">🌿</div>
+                        <div class="item-ring ring-green"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Jain Vadapaav</h3>
+                        <p class="item-desc">No onion, no garlic — pure satvik flavors with special Jain masala</p>
+                        <div class="item-meta">
+                            <div class="spice-dots">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                            </div>
+                            <span class="item-tag jain">◆ Jain</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹35</span>
+                        <button class="add-btn" aria-label="Add Jain Vadapaav">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <!-- SIDES -->
+                <div class="menu-item" data-category="sides" data-animate="stagger" data-delay="0">
+                    <div class="item-visual">
+                        <div class="item-emoji">🔺</div>
+                        <div class="item-ring"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Samosa</h3>
+                        <p class="item-desc">Crispy golden triangle stuffed with spiced potato & peas</p>
+                        <div class="item-meta">
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹20</span>
+                        <button class="add-btn" aria-label="Add Samosa">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <div class="menu-item" data-category="sides" data-animate="stagger" data-delay="1">
+                    <div class="item-visual">
+                        <div class="item-emoji">🍛</div>
+                        <div class="item-ring ring-red"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Misal Pav</h3>
+                        <p class="item-desc">Spicy sprouted moth beans curry topped with farsan, served with pav</p>
+                        <div class="item-meta">
+                            <div class="spice-dots">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+                            </div>
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹70</span>
+                        <button class="add-btn" aria-label="Add Misal Pav">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <!-- BEVERAGES -->
+                <div class="menu-item" data-category="beverages" data-animate="stagger" data-delay="0">
+                    <div class="item-badge popular">♥ Popular</div>
+                    <div class="item-visual">
+                        <div class="item-emoji">☕</div>
+                        <div class="item-ring ring-brown"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Cutting Chai</h3>
+                        <p class="item-desc">Half glass of strong, sweet Mumbai-style tea — the perfect companion</p>
+                        <div class="item-meta">
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹15</span>
+                        <button class="add-btn" aria-label="Add Cutting Chai">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <div class="menu-item" data-category="beverages" data-animate="stagger" data-delay="1">
+                    <div class="item-visual">
+                        <div class="item-emoji">🥛</div>
+                        <div class="item-ring"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Masala Chaas</h3>
+                        <p class="item-desc">Cool spiced buttermilk with roasted cumin & fresh coriander</p>
+                        <div class="item-meta">
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price">₹25</span>
+                        <button class="add-btn" aria-label="Add Masala Chaas">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+                <!-- COMBOS -->
+                <div class="menu-item combo-item" data-category="combos" data-animate="stagger" data-delay="0">
+                    <div class="item-badge combo-badge">🎯 Value</div>
+                    <div class="item-visual">
+                        <div class="item-emoji">🎉</div>
+                        <div class="item-ring ring-gold"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="item-name">Classic Combo</h3>
+                        <p class="item-desc">1 Classic Vadapaav + 1 Cutting Chai — the iconic pair</p>
+                        <div class="item-meta">
+                            <span class="combo-save">Save ₹10</span>
+                            <span class="item-tag veg">● Veg</span>
+                        </div>
+                    </div>
+                    <div class="item-price-block">
+                        <span class="item-price-old">₹45</span>
+                        <span class="item-price">₹35</span>
+                        <button class="add-btn" aria-label="Add Classic Combo">+</button>
+                    </div>
+                    <div class="item-shine"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CHUTNEY SECTION ============ -->
+    <section class="chutney-section section" id="chutney" data-bg="crimson">
+        <div class="section-bg-mandala chutney-mandala"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Our Signature</span>
+                <h2 class="section-title chutney-title">The Chutneys</h2>
+                <p class="section-subtitle">Three legendary chutneys that make our Vadapaav unforgettable</p>
+            </div>
+
+            <div class="chutney-grid">
+                <div class="chutney-card" data-animate="stagger" data-delay="0">
+                    <div class="card-glow green-glow"></div>
+                    <div class="chutney-icon">🌿</div>
+                    <div class="chutney-number">01</div>
+                    <h3 class="chutney-name">Green Chutney</h3>
+                    <p class="chutney-desc">Fresh coriander, mint, green chilies & a squeeze of lemon. The cooling fire.</p>
+                    <div class="spice-meter">
+                        <span class="spice-label">Spice Level</span>
+                        <div class="spice-bar">
+                            <div class="spice-fill" data-level="60"></div>
+                        </div>
+                    </div>
+                    <div class="card-shine"></div>
+                </div>
+
+                <div class="chutney-card featured-card" data-animate="stagger" data-delay="1">
+                    <div class="card-glow red-glow"></div>
+                    <div class="featured-badge">★ Signature</div>
+                    <div class="chutney-icon">🌶️</div>
+                    <div class="chutney-number">02</div>
+                    <h3 class="chutney-name">Dry Garlic Chutney</h3>
+                    <p class="chutney-desc">Roasted garlic, red chili, peanuts & coconut. The soul of Vadapaav.</p>
+                    <div class="spice-meter">
+                        <span class="spice-label">Spice Level</span>
+                        <div class="spice-bar">
+                            <div class="spice-fill" data-level="90"></div>
+                        </div>
+                    </div>
+                    <div class="card-shine"></div>
+                </div>
+
+                <div class="chutney-card" data-animate="stagger" data-delay="2">
+                    <div class="card-glow tamarind-glow"></div>
+                    <div class="chutney-icon">🫙</div>
+                    <div class="chutney-number">03</div>
+                    <h3 class="chutney-name">Tamarind Chutney</h3>
+                    <p class="chutney-desc">Sweet tamarind, jaggery, dates & warm spices. The sweet contrast.</p>
+                    <div class="spice-meter">
+                        <span class="spice-label">Spice Level</span>
+                        <div class="spice-bar">
+                            <div class="spice-fill" data-level="30"></div>
+                        </div>
+                    </div>
+                    <div class="card-shine"></div>
+                </div>
+            </div>
+
+            <div class="chutney-stats" data-animate="fade-up">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15000">0</span>
+                    <span class="stat-label">Vadapaavs Served Daily</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">Secret Spices Used</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2005">0</span>
+                    <span class="stat-label">Serving Since</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LOCATION SECTION ============ -->
+    <section class="location-section section" id="location" data-bg="dark">
+        <div class="section-bg-mandala location-mandala"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label light-label">Find Us</span>
+                <h2 class="section-title location-title">Our Location</h2>
+                <p class="section-subtitle light-sub">Visit us at the heart of Vadodara for the authentic experience</p>
+            </div>
+
+            <div class="location-content">
+                <div class="location-card-wrapper" data-animate="slide-left">
+                    <div class="location-card">
+                        <div class="location-map-placeholder">
+                            <div class="map-pin-animated">
+                                <div class="pin-pulse"></div>
+                                <div class="pin-icon">📍</div>
+                            </div>
+                            <div class="map-grid">
+                                <div class="map-line horizontal"></div>
+                                <div class="map-line horizontal h2"></div>
+                                <div class="map-line horizontal h3"></div>
+                                <div class="map-line vertical"></div>
+                                <div class="map-line vertical v2"></div>
+                                <div class="map-line vertical v3"></div>
+                            </div>
+                            <div class="map-label">Vadodara, Gujarat</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-info" data-animate="slide-right">
+                    <div class="info-item">
+                        <div class="info-icon">🏠</div>
+                        <div class="info-text">
+                            <h4>Address</h4>
+                            <p>Near Laxmipura Gate, Mandvi,<br>Vadodara, Gujarat 390001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-text">
+                            <h4>Timing</h4>
+                            <p>8:00 AM — 11:00 PM<br>Open All 7 Days</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <h4>Contact</h4>
+                            <p>+91 98765 43210<br>vadapaav@email.com</p>
+                        </div>
+                    </div>
+                    <a href="#" class="directions-btn">
+                        Get Directions
+                        <span class="btn-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="about-section section" id="about" data-bg="green">
+        <div class="section-bg-mandala about-mandala"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label cream-label">Our Story</span>
+                <h2 class="section-title about-title">About Us</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image-stack" data-animate="slide-left">
+                    <img src="a_hyper_realistic_3d_render_of_a_gourmet_vada_pav_indian_potato_burger_floating.png" alt="Gourmet Vada Pav" class="about-img about-img-main">
+                    <img src="a_3d_isometric_render_of_various_indian_spices_whole_cloves_cinnamon_sticks_and.png" alt="Indian Spices" class="about-img about-img-secondary">
+                    <div class="about-img-accent"></div>
+                </div>
+
+                <div class="about-text" data-animate="slide-right">
+                    <h3 class="about-headline">From a Humble Cart to <em>Vadodara's Favorite</em></h3>
+                    <p class="about-para">It started in 2005 with a single cart, a secret family recipe, and a burning passion for the perfect Vadapaav. Every morning, our potatoes are hand-picked, our spices freshly ground, and our bread baked to golden perfection.</p>
+                    <p class="about-para">What makes us different? It's not just food — it's an emotion. Each bite carries the warmth of generations of culinary wisdom, the zing of our legendary dry garlic chutney, and the love of Vadodara.</p>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon">🥔</span>
+                            <span class="value-text">Fresh Ingredients</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🔥</span>
+                            <span class="value-text">Made to Order</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">❤️</span>
+                            <span class="value-text">Made with Love</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-brand">Vadapaav</p>
+                <p class="footer-tagline">Tasty Vadaapaav | Vadodara</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+                <p class="footer-copy">© 2026 Vadapaav. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-text">Added to order!</span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
